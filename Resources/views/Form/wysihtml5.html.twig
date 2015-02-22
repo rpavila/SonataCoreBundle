@@ -1,0 +1,9 @@
+{% block sonata_type_wysihtml5_widget %}
+    {{ form_widget(form) }}
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#{{ id }}').wysihtml5();
+        });
+    </script>
+{% endblock %}
